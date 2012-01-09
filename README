@@ -33,10 +33,38 @@ Disable QuickStart checkbox and Done
 Install Database Schema
 =======================
 
-Set enviroment variable:
+Set enviroment variable
+________________________
 
-Windows 7: http://www.itechtalk.com/thread3595.html
+For Windows 7: http://www.itechtalk.com/thread3595.html
 
-Windows XP (See add enviroment variable): http://vlaurie.com/computers2/Articles/environment.htm
+For Windows XP (See add enviroment variable): http://vlaurie.com/computers2/Articles/environment.htm
 
 RCU_JDBC_TRIM_BLOCKS to TRUE
+
+Uncompress ?SOMETHING?
+______________________
+
+1. Uncompress file ofm_rcu_win_11.1.1.5.0_disk1_1of1 to c:\sei_2012
+
+2 . Run cmd in the start menu
+
+3. cd c:\sei_2012\ofm_rcu_win_11.1.1.5.0_disk1_1of1\rcuHome\bin
+
+4. check enviroment variable correct
+   echo %RCU_JDBC_TRIM_BLOCKS%
+
+3.1 Run rcu.bat
+
+Create new repository
+
+Next-> Select Create and Next -> Choose
+
+Hostname: localhost
+Port: 1521
+ServiceName: XE
+username: sys
+password: pass
+Role: SysDBA
+
+Next ->
