@@ -2,5 +2,41 @@ Installation
 ############
 
 Install Database
+================
 
-Execute OracleXEUniv -> Next -> Accept and Next -> Accept Default (c:\oraclexe) and Next -> Password: pass -> Install
+Execute OracleXEUniv -> Next -> Accept and Next -> Accept Default (c:\oraclexe) and Next -> Password: pass -> Install -> Finalize
+
+http://127.0.0.1:8080/apex/f?p=4550:11:3000616615708375::NO:::
+
+Run SQL command line created in start->menu:
+
+????
+
+Oracle Middleware
+=================
+
+Execute wls1035_win32.exe -> Next -> Create New Middleware Home, Accept default (c:/Oracle/Middleware) and next -> Disable support and next -> Typical and Next -> 
+
+Accept default Weblogic Server
+
+C:\Oracle\Middleware\wlserver_10.3
+
+Accept default Coherence Server
+
+C:\Oracle\Middleware\coherence_3.6
+
+Next -> Select All users and next -> Review and next
+
+
+Disable QuickStart checkbox and Done
+
+Install Database Schema
+=======================
+
+Set enviroment variable:
+
+Windows 7: http://www.itechtalk.com/thread3595.html
+
+Windows XP (See add enviroment variable): http://vlaurie.com/computers2/Articles/environment.htm
+
+RCU_JDBC_TRIM_BLOCKS to TRUE
