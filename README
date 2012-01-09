@@ -8,9 +8,31 @@ Execute OracleXEUniv -> Next -> Accept and Next -> Accept Default (c:\oraclexe) 
 
 http://127.0.0.1:8080/apex/f?p=4550:11:3000616615708375::NO:::
 
-Run SQL command line created in start->menu:
+Run cmd. Go to directory C:\oraclexe\app\oracle\product\10.2.0\server\BIN and run sqlplus.exe
 
-????
+user: SYSTEM
+pass: pass
+
+Run the following commands
+
+show parameter session
+show parameter processes
+
+alter system reset sessions scope=spfile sid='*';
+alter system set processes=300 scope=spfile;
+
+Go to window services and restart OracleServiceXE and OracleXETNSListener
+
+Login again with sqlplus.exe and 
+
+show parameter session
+
+Session should have more than 300 session
+
+show parameter processes
+
+Processes should have value of 300
+
 
 Oracle Middleware
 =================
@@ -67,4 +89,12 @@ username: sys
 password: pass
 Role: SysDBA
 
-Next ->
+Next -> Ignore the to old warning of the database. -> OK
+
+Create new Prefix (DEV)
+
+In Oracle AS Repository Components Select
+   1.AS Common schemas -> Metadata Services
+   2. SOA and BPM infrastructure
+
+Next. If pre-requisites are ok click OK.
