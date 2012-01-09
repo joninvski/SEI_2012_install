@@ -52,8 +52,8 @@ Next -> Select All users and next -> Review and next
 
 Disable QuickStart checkbox and Done
 
-Install Database Schema
-=======================
+Install Database Schema using RCU
+=================================
 
 Set enviroment variable
 ________________________
@@ -97,4 +97,9 @@ In Oracle AS Repository Components Select
    1.AS Common schemas -> Metadata Services
    2. SOA and BPM infrastructure
 
-Next. If pre-requisites are ok click OK.
+Next. If pre-requisites are ok click OK. Use password: pass for all schemas and then next. Accept tablespace default and next. Click ok. Ok if everything is ok. The the summary click create. If everything is ok choose close.
+
+Dont know
+=========
+
+Extract ofm_soa_generic_11.1.1.5.0_disk1_1of2 to c:\sei_2012
